@@ -66,9 +66,7 @@ public class Picture
         
         sun.slowMoveVertical(0);
     }
-    public void moveSun(){
-        sun.slowMoveVertical(110);
-    }
+   
     /**
      * Change this picture to black/white display
      */
@@ -82,7 +80,14 @@ public class Picture
             sun.changeColor("black");
         }
     }
-
+    public void moveSun(){
+        sun.slowMoveVertical(110);
+         wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+            sun.changeColor("black");
+            floor.changeColor("black");
+    }
     /**
      * Change this picture to use color display
      */

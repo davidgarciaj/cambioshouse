@@ -17,6 +17,9 @@ public class Picture
     private Circle sun;
     private Square floor;
     private Person man;
+    private Circle nube1;
+    private Circle nube2;
+    private Circle nube3;
 
     /**
      * Constructor for objects of class Picture
@@ -108,5 +111,51 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+    public void nube(){
+            nube1 = new Circle();
+            nube2 = new Circle();
+            nube3 = new Circle();
+            nube1.changeSize(40);
+            nube2.changeSize(50);
+            nube3.changeSize(40);
+            nube1.moveHorizontal(-180);
+            nube2.moveHorizontal(-200);
+            nube3.moveHorizontal(-220);
+            nube1.changeColor("black");
+            nube2.changeColor("black");
+            nube3.changeColor("black");
+            nube1.makeVisible();
+            nube2.makeVisible();
+            nube3.makeVisible();
+    }
+    public void mueveNubes(){
+    if (nube1 != null)
+    {
+            nube3.moveHorizontal(20);
+            nube1.moveHorizontal(20);
+            nube2.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube1.moveHorizontal(20);
+            nube2.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube1.moveHorizontal(20);
+            nube2.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube1.moveHorizontal(20);
+            nube2.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube1.moveHorizontal(20);
+            nube2.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube1.moveHorizontal(20);
+            nube2.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube1.moveHorizontal(20);
+            nube2.moveHorizontal(20);
+            nube3.moveHorizontal(20);
+            nube();
+    }
     }
 }

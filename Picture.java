@@ -64,9 +64,11 @@ public class Picture
         floor.moveVertical(130);
         floor.moveHorizontal(-500);
         
+        sun.slowMoveVertical(0);
+    }
+    public void moveSun(){
         sun.slowMoveVertical(110);
     }
-
     /**
      * Change this picture to black/white display
      */

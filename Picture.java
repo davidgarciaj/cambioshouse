@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square floor;
+    private Person man;
 
     /**
      * Constructor for objects of class Picture
@@ -87,6 +88,13 @@ public class Picture
             roof.changeColor("black");
             sun.changeColor("black");
             floor.changeColor("black");
+    }
+    public void newPerson(){
+         man = new Person();
+         man.moveHorizontal(-300);
+         man.moveVertical(20);
+         man.makeVisible();
+         man.slowMoveHorizontal(170);
     }
     /**
      * Change this picture to use color display
